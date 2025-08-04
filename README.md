@@ -1,12 +1,33 @@
-# React + Vite
+# 🎮 EUTA - The Ultimate Guessing Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+EUTA (Enjoyable Ultimate Thinking Agent) is an interactive web-based guessing game that uses the Akinator-style logic via the **AKI API**. The game tries to guess the character, object, or person you're thinking of by asking a series of intelligent questions.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🧠 AI-powered guessing using the AKI API
+- 🕹️ Smooth and responsive gameplay
+- 🌐 Web-friendly UI with modern design
+- 📱 Mobile-compatible experience
+- 🔄 Option to restart or play again
+- 💬 Real-time question/answer interaction
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📸 Screenshots
+
+> *(Add a few screenshots here after deploying or running locally)*
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React
+- **Backend**: Node.JS
+
+- **API**: [Akinator API (unofficial)]
+- **Version Control**: Git & GitHub
+
+---
+
