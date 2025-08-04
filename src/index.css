@@ -1,0 +1,26 @@
+html, body {
+  height: 100%;        /* Ensure the body and html elements stretch to full height */
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: linear-gradient(140deg, #89f7fe, #70ceeb, #66a6ff);
+  background-size: cover;         /* Ensure background covers entire screen */
+  background-position: center;    /* Centers the background */
+  background-repeat: no-repeat;
+  height: 100%;                   /* Ensure background takes full height */
+  overflow: hidden;               /* Optional: Prevent scrollbars if background doesn't fit perfectly */
+}
