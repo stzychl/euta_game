@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import axios from "axios";
 import './style.css';
 import chibi from '../assets/chibi.svg';
+axios.defaults.baseURL = 'https://euta.vercel.app'; // Or use environment variable in production
+axios.defaults.withCredentials = true;
 
 function Game() {
   const [question, setQuestion] = useState('');
@@ -12,10 +14,12 @@ function Game() {
   const [desc, setDesc] = useState('');
   const [loading, setLoading] = useState(false); // Start as false
 
+
+
   const start = async () => {
     try {
       setLoading(true);
-      const data = await axios.get('https://euta.vercel.app/game');
+      const data = await axios.get('http://localhost:3000/game');
       setQuestion(data.data.question);
       setStarted(true);
     } catch (e) {
@@ -28,12 +32,12 @@ function Game() {
   const interactResponse = async (value) => {
     try {
       setLoading(true);
-      const res = await axios.post('https://euta.vercel.app/startGame', {
+      const res = await axios.post('http://localhost:3000/startGame', {
         answer: value
       });
 
       setQuestion(res.data.question);
-
+console.log(res.data)
       if (res.data.suggestion_name) {
         setDesc(res.data.suggestion_desc);
         setName(res.data.suggestion_name);
