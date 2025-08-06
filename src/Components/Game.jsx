@@ -19,7 +19,7 @@ function Game() {
   const start = async () => {
     try {
       setLoading(true);
-      const data = await axios.get('http://localhost:3000/game');
+      const data = await axios.get('https://euta.vercel.app/game');
       setQuestion(data.data.question);
       setStarted(true);
     } catch (e) {
@@ -32,7 +32,7 @@ function Game() {
   const interactResponse = async (value) => {
     try {
       setLoading(true);
-      const res = await axios.post('http://localhost:3000/startGame', {
+      const res = await axios.post('https://euta.vercel.app/startGame', {
         answer: value
       });
 
